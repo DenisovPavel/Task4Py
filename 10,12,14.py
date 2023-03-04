@@ -1,4 +1,3 @@
-# Урок 2. Циклы (for, while)
 
 # Задача 10: На столе лежат n монеток. Некоторые из них лежат вверх решкой,
 #  а некоторые – гербом. Определите минимальное число монеток, которые нужно перевернуть,
@@ -25,30 +24,30 @@ else:
 
 # ВТОРОЙ СЛУЧАЙ В ВИДЕ 0 И 1
 
-# import random
-# num = int(input("Задайте количество монет: "))
-# coins = []
-# for i in range(num):
-#    coins.append(random.randint(0, 1))
-# print(f"Случайный разброс монет по заданому размеру:{coins}")
+import random
+num = int(input("Задайте количество монет: "))
+coins = []
+for i in range(num):
+   coins.append(random.randint(0, 1))
+print(f"Случайный разброс монет по заданому размеру:{coins}")
 
-# Reshka = 0  # Решка
-# Orel =  0  # орел
+Reshka = 0  # Решка
+Orel =  0  # орел
 
-# for j in coins:
-#   if j == 0:
-#    Reshka += 1
-#   else:
-#      Orel += 1
+for j in coins:
+  if j == 0:
+   Reshka += 1
+  else:
+     Orel += 1
+ 
+print(f' Орлов : {Orel} и Решек: {Reshka}')
 
-# print(f' Орлов : {Orel} и Решек: {Reshka}')
-
-# if Orel==Reshka:
-#   print("Монеты совподают!")
-# elif Orel >= Reshka:
-#  print(f'Развернем {Reshka} выпавших Решкой !')
-# else:
-#     print(f'Развернем {Orel} выпавших Орлом !')
+if Orel==Reshka:
+  print("Монеты совподают!")
+elif Orel >= Reshka:
+ print(f'Развернем {Reshka} выпавших Решкой !')
+else:
+    print(f'Развернем {Orel} выпавших Орлом !')
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
